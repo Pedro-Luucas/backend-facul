@@ -2,23 +2,17 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
-//dps termino
+
 public class BasePorto {
     String nome;
     List<Barco> barcosAtracados = new ArrayList<Barco>();
 
-    void atracarBarco(Barco b){
-
+    protected boolean atracarBarco(Barco b) {
         barcosAtracados.add(b);
-    };
+        return true;
+    }
 
     void desatracarBarco(Barco b){
-        try {
-            barcosAtracados.remove(b);
-        }
-        catch (Exception e){
-            System.out.println("esse barco nao existe ou não esta atracado! ");
-            System.out.println("ERRO!!! " + e);
-        }
+        barcosAtracados.remove(b);
     }
 }
