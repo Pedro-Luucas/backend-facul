@@ -1,0 +1,12 @@
+1. Solução de segurança para backend e sua limitação:
+Uma solução comum em sistemas web backend é o uso de firewalls de aplicação web (WAF), que filtram e monitoram tráfego HTTP para proteger contra ataques como SQL Injection e XSS (Cross-Site Scripting). No entanto, WAFs podem não ser totalmente eficazes contra ataques mais sofisticados, como Zero-Day Exploits, que exploram vulnerabilidades desconhecidas. Isso ocorre porque o WAF depende de assinaturas ou padrões conhecidos para bloquear ameaças, deixando sistemas vulneráveis a novos tipos de ataques que não estão previamente catalogados.
+
+2. Ataque conhecido e impacto nos negócios:
+Um ataque amplamente conhecido contra sistemas de backend é o ransomware. Em 2021, a Colonial Pipeline, nos EUA, sofreu um ataque de ransomware que interrompeu suas operações por dias, resultando em desabastecimento de combustíveis em diversas regiões. Além do impacto financeiro direto, a reputação da empresa foi prejudicada, e os usuários finais enfrentaram aumento nos preços e dificuldades de abastecimento, destacando a gravidade desse tipo de ataque.
+
+3. Tecnologias para proteger sistemas backend:
+Token JWT (JSON Web Token): Utilizado para autenticação segura e comunicação entre serviços. Ele assegura que apenas usuários autenticados possam acessar recursos protegidos.
+TLS (Transport Layer Security): Garante a criptografia das comunicações entre cliente e servidor, evitando ataques como interceptação de dados (Man-in-the-Middle).
+
+4. Técnica para evitar golpes de engenharia social:
+Uma técnica eficaz empregada em APIs Web é o uso de verificação de identidade baseada em autenticação multifator (MFA). Mesmo que um atacante obtenha credenciais de um usuário por meio de engenharia social, o MFA adiciona uma camada extra de segurança, exigindo um código temporário ou autenticação via dispositivo confiável. Isso reduz significativamente o risco de acesso não autorizado e protege os usuários de golpes comuns como phishing.
